@@ -9,24 +9,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Forum</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../js/logic.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+  
 </head>
 
 <body>
 
-    <div class="responsive-img">
-        <div class="caption">
-            <span class="border">BEGIN WEATHER FORUM</span>
-        </div>
+    
 
         <div style="position:relative;">
             <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-                <p>Placeholder text.</p>
+                <!-- Dropdown Trigger -->
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>City/State</a>
+                <!-- Dropdown Structure -->
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="#!"><i class="material-icons">cloud</i>Irvine</a></li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>Mission Viejo</a></li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>New York</a></li>
+                    <li><a href="#!"><i class="material-icons">view_module</i>Seoul</a></li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>Paris</a></li>
+                </ul>
+
+
             </div>
         </div>
 

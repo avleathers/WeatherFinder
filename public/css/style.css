@@ -72,3 +72,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .dropdown-content{
+    width: max-content !important;
+    height:auto !important;
+ }

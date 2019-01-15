@@ -5,6 +5,6 @@ INSERT INTO weather_inputs (user_name, city_name, state_name, country_name,weath
 USE weatherforum_db;
 INSERT INTO weather_inputs (user_name, city_name, state_name, country_name,weather_input) VALUES ('MissyL', 'New York', 'NY','US','Sunny all day. Current temperature: 35 degrees F, low: 25 degrees F');
 USE weatherforum_db;
-INSERT INTO weather_inputs (user_name, city_name, state_name, country_name,weather_input) VALUES ('TaeyoungK', 'Sol', '','KR','Cloudy. Current temperature: 33 degrees F, low: 12 degrees F');
+INSERT INTO weather_inputs (user_name, city_name, state_name, country_name,weather_input) VALUES ('TaeyoungK', 'Seoul', '','KR','Cloudy. Current temperature: 33 degrees F, low: 12 degrees F');
 USE weatherforum_db;
 INSERT INTO weather_inputs (user_name, city_name, state_name, country_name,weather_input) VALUES ('Pierre', 'Paris', '','FR','Partly cloudy and humid. Current temperature: 48 degrees F, low: 38 degrees F');
