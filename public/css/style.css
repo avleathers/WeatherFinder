@@ -74,7 +74,7 @@ body, html {
   }
 
   .page-footer {
-    padding-top: 10px;
-    color: #fff;
-    background-color: #b9571b;
+    padding-top: 5px;
+    color: ivory;
+    background-color: #b9571b !important;
   }   
