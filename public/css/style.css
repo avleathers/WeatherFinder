@@ -4,7 +4,7 @@ body, html {
 
   /* .caption {} */
 
-  .responsive-img { 
+  .img { 
     /* The image used */
     background: url("https://earth.nullschool.net/#current/wind/surface/level/orthographic=-99.71,26.70,305/loc=-117.583,35.605");
 
@@ -18,7 +18,7 @@ body, html {
     background-size: cover;
   }
   
-  .responsive-img-1 { 
+  .img-1 { 
     /* The image used */
     background-image: url("https://images.pexels.com/photos/6566/sea-sky-clouds-weather.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   
@@ -32,7 +32,7 @@ body, html {
     background-size: cover;
   }
 
-  .responsive-img-2 { 
+  .img-2 { 
     /* The image used */
     background-image: url("https://images.pexels.com/photos/763398/pexels-photo-763398.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
   
@@ -46,7 +46,7 @@ body, html {
     background-size: cover;
   }
 
-  .responsive-img-3 { 
+  .img-3 { 
     /* The image used */
     background-image: url("https://images.pexels.com/photos/265959/pexels-photo-265959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   
@@ -59,7 +59,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .responsie-img-4 { 
+  .img-4 { 
     /* The image used */
     background-image: url("https://images.pexels.com/photos/417370/pexels-photo-417370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   
@@ -72,7 +72,16 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
   }
+<<<<<<< HEAD
   .dropdown-content{
     width: max-content !important;
     height:auto !important;
  }
+=======
+
+  .page-footer {
+    padding-top: 10px;
+    color: #fff;
+    background-color: #b9571b;
+  }   
+>>>>>>> origin/missybranch
