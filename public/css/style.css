@@ -72,16 +72,18 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
   }
-<<<<<<< HEAD
   .dropdown-content{
     width: max-content !important;
     height:auto !important;
  }
-=======
 
   .page-footer {
     padding-top: 10px;
     color: #fff;
     background-color: #b9571b;
   }   
->>>>>>> origin/missybranch
+ .header{
+    font-family: 'Metal Mania', cursive;
+    text-align: center;
+    font-size: 80px;
+ }
