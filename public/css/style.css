@@ -87,3 +87,21 @@ body, html {
     text-align: center;
     font-size: 80px;
  }
+
+ .jumbotron{
+    font-family: 'Metal Mania', cursive;
+    font-size: 50px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.blogBtn{
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    font-size: 50px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+
+}
