@@ -100,3 +100,11 @@ body, html {
     justify-content: center;
 
 }
+.submitBtn{
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+
+}
