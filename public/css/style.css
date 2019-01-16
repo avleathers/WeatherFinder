@@ -2,8 +2,6 @@ body, html {
     height: 100%;
   }
 
-  /* .caption {} */
-
   .img { 
     /* The image used */
     background: url("https://earth.nullschool.net/#current/wind/surface/level/orthographic=-99.71,26.70,305/loc=-117.583,35.605");
@@ -84,7 +82,6 @@ body, html {
   }   
  
 
-
  .jumbotron{
     font-size: 40px;
     display: flex;
@@ -110,13 +107,17 @@ body, html {
 }
    
   .bloginput {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 40px;
+    color:dimgrey; 
+    font-size: 40px;
   }
   input[type=text], select {
-    width: 100%;
+    /* width: 100%; */
     padding: 12px 20px;
     margin: 8px 0;
+    height: 1rem !important;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -137,8 +138,8 @@ body, html {
   input[type=submit]:hover {
     background-color: #45a049;
   }
+
+  #blogPosts {
+
+  }
   
- 
-
-
- 

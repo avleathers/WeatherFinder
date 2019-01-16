@@ -48,8 +48,8 @@
         <div class="img-1">
         </div>
 
-
-        <h3>Share Your Weather News</h3>
+    
+        <h3 style="text-align:center;">Share Your Weather News</h3>
 
         <div class="bloginput">
             <form>
@@ -75,7 +75,11 @@
 
                 <input type="text" id="country_name" name="country__name" placeholder="Country Name">
 
-                <input class="submitBtn" type="submit" value="Submit"></input>
+                <input type="text" id="weather_input" name="weather_input" placeholder="Weather Blog">
+
+                <br />
+                <button type="submit" class="btn btn-success submit btn-lg">Submit</button>
+            
             </form>
         </div>
 
@@ -84,15 +88,13 @@
 
         <div style="position:relative;">
             <div style="color:ivory;background-color:dimgray;text-align:center;padding:50px 80px;text-align: justify;">
-                <!-- <ul>
-                    <li>Blog Post Title:</li>
-                    <li>Posted By:</li>
-                    <li>Date and Time of Post:</li>
-                    <li>City, State, Country:</li>
-                    <li>Weather Condition:</li>
-                    <li>Additional Comments:</li>
-
-                </ul> -->
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <h2>Weather Blog Posts</h2>
+                      <hr>
+                      <div id="blogPosts"></div>
+                    </div>
+                  </div>
             </div>
         </div>
 
