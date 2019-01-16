@@ -1,7 +1,7 @@
-// $(document).ready(function(){
-//     $('.modal').modal();
-//     $('.dropdown-trigger').dropdown();
-//  });
+$(document).ready(function(){
+    $('.modal').modal();
+    $('.dropdown-trigger').dropdown();
+ });
 
 $("input").keyup(function(){
     var txt = $("input").val();
