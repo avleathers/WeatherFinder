@@ -2,8 +2,6 @@ body, html {
     height: 100%;
   }
 
-  /* .caption {} */
-
   .img { 
     /* The image used */
     background: url("https://earth.nullschool.net/#current/wind/surface/level/orthographic=-99.71,26.70,305/loc=-117.583,35.605");
@@ -83,7 +81,6 @@ body, html {
     background-color: #b9571b !important;
   }   
  
- }
 
  .jumbotron{
     font-size: 40px;
