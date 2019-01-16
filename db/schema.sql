@@ -1,5 +1,3 @@
-### Schema
-
 CREATE DATABASE weatherforum_db;
 USE weatherforum_db;
 
@@ -13,7 +11,6 @@ CREATE TABLE weather_inputs
 	country_name varchar(255) NOT NULL,
 	weather_condition varchar(25) NOT NULL,
 	weather_input varchar(255) NOT NULL,
-	 
     ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     date DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 	PRIMARY KEY (id)
