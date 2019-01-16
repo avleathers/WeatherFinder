@@ -107,27 +107,3 @@ body, html {
     background-color: #45a049;
   }
   
-  div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-
-
-  /* .input-field>label {
-    color: ivory!important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 1rem;
-    cursor: text; */
-    /* -webkit-transition: color .2s ease-out, -webkit-transform .2s ease-out;
-    transition: color .2s ease-out, -webkit-transform .2s ease-out;
-    transition: transform .2s ease-out, color .2s ease-out;
-    transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%;
-    text-align: initial;
-    -webkit-transform: translateY(12px);
-    transform: translateY(12px); */
-/* } */
