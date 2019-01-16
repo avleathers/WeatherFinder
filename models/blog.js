@@ -8,7 +8,7 @@ module.exports = function (sequelize, DataTypes) {
             }
         },
 
-        title: {
+        blog_title: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
@@ -57,6 +57,17 @@ module.exports = function (sequelize, DataTypes) {
         }
 
     });
+
+
+
+    Post.associate = function(bloggings) {
+        Post.belongsTo(bloggings.Blogger, {
+          foreignKey: {
+            allowNull: false
+          }
+        });
+      };
+    
 
 
     return Post;

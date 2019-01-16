@@ -3,8 +3,8 @@ module.exports = function(sequelize, DataTypes) {
             name: DataTypes.STRING
     });
   
-    Blogger.associate = function(models) {
-     Blogger.hasMany(models.Post, {
+    Blogger.associate = function(bloggings) {
+     Blogger.hasMany(bloggings.Post, {
         onDelete: "cascade"
       });
     };

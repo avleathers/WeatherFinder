@@ -20,13 +20,13 @@ fs
     return (file.indexOf(".") !== 0) && (file !== basename) && (file.slice(-3) === ".js");
   })
   .forEach(function(file) {
-    var model = sequelize["import"](path.join(__dirname, file));
-    db[model.name] = model;
+    var blogging = sequelize["import"](path.join(__dirname, file));
+    db[blogging.name] = blogging;
   });
 
-Object.keys(db).forEach(function(modelName) {
-  if (db[modelName].associate) {
-    db[modelName].associate(db);
+Object.keys(db).forEach(function(bloggingName) {
+  if (db[bloggingName].associate) {
+    db[bloggingName].associate(db);
   }
 });
 
