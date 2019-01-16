@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CREATE DATABASE weatherforum_db;
 USE weatherforum_db;
 
@@ -15,3 +16,9 @@ CREATE TABLE weather_inputs
     date DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 	PRIMARY KEY (id)
 );
+=======
+
+CREATE DATABASE weatherforum_db;
+USE weatherforum_db;
+
+>>>>>>> origin/colinBranch
