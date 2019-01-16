@@ -4,35 +4,28 @@
 <head>
     <meta charset="UTF-8">
 
-  <!-- Let browser know website is optimized for mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>The Weather Forum</title>
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <!--Import Google Icon Font-->
-  
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Weather Forum</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--Import Google Icon Font-->
 
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="../js/logic.js"></script>
-  <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../js/logic.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
 
 </head>
 
 <body>
-
-    <!-- Document.ready for the inputs - required by Materialize -->
-    <!-- $(document).ready(function(){
-            $('select').formSelect();
-          }); -->
-
-
 
     <div class="img">
         <div style="color: ivory;background-color:#0f6182;text-align:center;padding:30px 80px;text-align: justify;">
@@ -55,66 +48,35 @@
         <div class="img-1">
         </div>
 
+
+        <h3>Share Your Weather News</h3>
+
         <div class="bloginput">
-            <div style="color: ivory;background-color:dimgray;text-align:center;padding:50px 80px;text-align: justify;">
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="input_text" type="text" data-length="10">
-                                <label for="input_text">Blog Post Title</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="input_text" type="text" data-length="10">
-                                <label for="input_text">Name</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="input_text" type="text" data-length="10">
-                                <label for="input_text">City</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="input_text" type="text" data-length="10">
-                                <label for="input_text">State</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="input_text" type="text" data-length="10">
-                                <label for="input_text">Country</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Weather Conditions</a>
-                                <!-- Dropdown Structure -->
-                                <ul id='dropdown1' class='dropdown-content'>
-                                    <li><a href="#!"><i class="material-icons">wb_sunny</i>Sunny</a></li>
-                                    <li><a href="#!"><i class="material-icons">subway</i>New York</a></li>
-                                    <li><a href="#!"><i class="material-icons">spa</i>Seoul</a></li>
-                                    <li><a href="#!"><i class="material-icons">language</i>Paris</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="input_text" type="text" data-length="10">
-                                <label for="input_text">Weather Input</label>
-                            </div>
-                        </div>
-                        <h4 class="header">
-                            <div class="submitBtn">
-                                <button class="submitBtn">Submit</button>
-                            </div>
-                        </h4>
-                    </form>
+            <form action="/action_page.php">
+                <div>
+                    <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Weather Condition</a>
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!"><i class="material-icons"></i>Flooding</a></li>
+                        <li><a href="#!"><i class="material-icons"></i>Raining</a></li>
+                        <li><a href="#!"><i class="material-icons"></i>Sunny</a></li>
+                        <li><a href="#!"><i class="material-icons"></i>Snowing</a></li>
+                        <li><a href="#!"><i class="material-icons"></i>Humid</a></li>
+                        <li><a href="#!"><i class="material-icons"></i>Lightning</a></li>
+                    </ul>
                 </div>
-            </div>
+                
+                <input type="text" id="blog_title" name="blog_title" placeholder="Blog Title">
+                <input type="text" id="user_name" name="user_name" placeholder="Your Name">
+
+                <input type="text" id="city_name" name="city_name" placeholder="City Name">
+
+                <input type="text" id="state_name" name="state_name" placeholder="State Name">
+
+                <input type="text" id="country_name" name="country__name" placeholder="Country Name">
+
+                <button class="submitBtn" type="submit" value="Submit">Submit</button>
+            </form>
         </div>
 
         <div class="img-2">
@@ -150,8 +112,6 @@
         <script type="text/javascript" src="../js/materialize.min.js">
         </script>
 
-
-
 </body>
 
 <footer class="page-footer">
@@ -168,7 +128,5 @@
         </div>
     </div>
 </footer>
-
-
 
 </html>
