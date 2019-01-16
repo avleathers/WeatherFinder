@@ -72,12 +72,43 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .dropdown-content{
+    width: max-content !important;
+    height:auto !important;
+ }
 
   .page-footer {
-    padding-top: 5px;
+    padding-top: 10px;
     color: ivory;
     background-color: #b9571b !important;
-  } 
+  }   
+ 
+ }
+
+ .jumbotron{
+    font-size: 40px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.blogBtn{
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+
+}
+.submitBtn{
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+
+}
+   
   .bloginput {
     margin-left: 20px;
     margin-right: 20px;
