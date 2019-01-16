@@ -107,8 +107,9 @@ body, html {
 }
    
   .bloginput {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
   }
   input[type=text], select {
     width: 100%;
@@ -133,5 +134,9 @@ body, html {
   
   input[type=submit]:hover {
     background-color: #45a049;
+  }
+
+  #blogPosts {
+
   }
   
