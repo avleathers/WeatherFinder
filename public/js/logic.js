@@ -1,7 +1,6 @@
-$(document).ready(function () {
-    $('.modal').modal();
-    $('.dropdown-trigger').dropdown();
-});
+$(document).ready(function(){
+    $('select').formSelect();
+  });
 
 $("input").keyup(function () {
     var txt = $("input").val();
@@ -10,12 +9,12 @@ $("input").keyup(function () {
     });
 });
 
-var weatherCondition = document.getElementsByClassName("weatherCondition");
-var blogTitle = document.getElementById("blogTitle");
-var userName = document.getElementById("userName");
-var cityName = document.getElementById("cityName");
-var stateName = document.getElementById("stateName");
-var countryName = document.getElementById("countryName");
+var weatherCondition = document.getElementsByClassName("weatherCondition").value;
+var blogTitle = document.getElementById("blogTitle").value;
+var userName = document.getElementById("userName").value;
+var cityName = document.getElementById("cityName").value;
+var stateName = document.getElementById("stateName").value;
+var countryName = document.getElementById("countryName").value;
 
 var messageBox = document.getElementById("blogPosts");
 
@@ -46,13 +45,14 @@ function clearAndShow() {
 };
 
 function insert() {
-    document.write(weatherCondition.value);
-    document.write(blogTitle.value);
-    document.write(userName.value);
-    document.write(city.value);
-    document.write(state.value);
-    document.write(country.value);
+    document.write("weatherCondition").value;
+    document.write("blogTitle").value;
+    document.write("userName").value;
+    document.write("city").value;
+    document.write("state").value;
+    document.write("country").value;
 
     clearAndShow();
 };
 
+console.log(insert());
