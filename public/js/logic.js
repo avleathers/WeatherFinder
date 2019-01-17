@@ -49,4 +49,4 @@ function clearAndShow() {
     messageBox.innerHTML += "State: " + stateInput.join(", ") + "<br/>";
     messageBox.innerHTML += "Country: " + countryInput.join(", ");
 
-}
+};
