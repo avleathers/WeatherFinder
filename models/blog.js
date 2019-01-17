@@ -3,7 +3,7 @@ module.exports = function (sequelize, DataTypes) {
         user_name: {
             type: DataTypes.STRING,
             allowNull: false,
-            varlidate: {
+            validate: {
                 len: [1]
             }
         },
@@ -19,7 +19,7 @@ module.exports = function (sequelize, DataTypes) {
         city_name: {
             type: DataTypes.STRING,
             allowNull: false,
-            varlidate: {
+            validate: {
                 len: [1]
             }
         },
@@ -27,7 +27,7 @@ module.exports = function (sequelize, DataTypes) {
         state_name: {
             type: DataTypes.STRING,
             allowNull: false,
-            varlidate: {
+            validate: {
                 len: [1]
             }
         },
@@ -35,7 +35,7 @@ module.exports = function (sequelize, DataTypes) {
         country_name: {
             type: DataTypes.STRING,
             allowNull: false,
-            varlidate: {
+            validate: {
                 len: [1]
             }
         },
@@ -43,7 +43,7 @@ module.exports = function (sequelize, DataTypes) {
         weather_condition: {
             type: DataTypes.STRING,
             allowNull: false,
-            varlidate: {
+            validate: {
                 len: [1]
             }
         },
@@ -51,7 +51,7 @@ module.exports = function (sequelize, DataTypes) {
         weather_input: {
             type: DataTypes.STRING,
             allowNull: false,
-            varlidate: {
+            validate: {
                 len: [1]
             }
         }
