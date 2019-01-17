@@ -36,7 +36,7 @@
                         <div class="headercontainer">
                             <h4 class="header">
                                 <div class="blogBtn">
-                                    <button class="blogBtn">Blog</button>
+                                        <a href="#blog-entry"><button class="blogBtn">Add A Blog</button></a>
                                 </div>
                             </h4>
 
@@ -48,8 +48,10 @@
         <div class="img-1">
         </div>
 
-    
-        <h3 style="text-align:center;">Share Your Weather News</h3>
+
+        <a name="blog-entry">
+            <h3 style="text-align:center;">Share Your Weather News</h3>
+        </a>
 
         <div class="bloginput">
             <form class="blogForm">
@@ -65,9 +67,9 @@
                         <li><a href="#!"><i class="material-icons"></i>Lightning</a></li>
                     </ul>
                 </div>
-                
+
                 <input type="text" id="blog_title" name="blog_title" placeholder="Blog Title">
-                <input type="text" id="user_name" name="user_name" placeholder="Your Name">
+                <input type="text" id="user_name" name="user_name" placeholder="User Name">
 
                 <input type="text" id="city_name" name="city_name" placeholder="City Name">
 
@@ -78,10 +80,15 @@
                 <input type="text" id="weather_input" name="weather_input" placeholder="Weather Blog">
 
                 <br />
+<<<<<<< HEAD
                 
                 <input type="button" class="btn btn-success submit btn-lg" value="Submit" onclick="insert()" />
 
                 <!-- anchor btn to blog catalog -->
+=======
+                <button type="submit" class="btn btn-success submit btn-lg">Submit</button>
+
+>>>>>>> 8981dbab35805348599c233d9ee50da37010255d
             </form>
         </div>
 
@@ -92,11 +99,11 @@
             <div style="color:ivory;background-color:dimgray;text-align:center;padding:50px 80px;text-align: justify;">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                      <h2>Weather Blog Posts</h2>
-                      <hr>
-                      <div id="blogPosts"></div>
+                        <h2>Weather Blog Posts</h2>
+                        <hr>
+                        <div id="blogPosts"></div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
 
