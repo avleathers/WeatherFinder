@@ -9,12 +9,12 @@ $("input").keyup(function () {
     });
 });
 
-var weatherCondition = document.getElementsByClassName("weatherCondition");
-var blogTitle = document.getElementById("blogTitle");
-var userName = document.getElementById("userName");
-var cityName = document.getElementById("cityName");
-var stateName = document.getElementById("stateName");
-var countryName = document.getElementById("countryName");
+var weatherCondition = document.getElementsByClassName("weatherCondition").value;
+var blogTitle = document.getElementById("blogTitle").value;
+var userName = document.getElementById("userName").value;
+var cityName = document.getElementById("cityName").value;
+var stateName = document.getElementById("stateName").value;
+var countryName = document.getElementById("countryName").value;
 
 var messageBox = document.getElementById("blogPosts");
 
