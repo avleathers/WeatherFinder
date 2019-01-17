@@ -10,18 +10,18 @@ $("input").keyup(function () {
 });
 
 var weatherCondition = document.getElementsByClassName("weatherCondition").value;
-var blogTitle = document.getElementById("blogTitle").value;
-var userName = document.getElementById("userName").value;
-var cityName = document.getElementById("cityName").value;
-var stateName = document.getElementById("stateName").value;
-var countryName = document.getElementById("countryName").value;
+var blogTitle = document.getElementById("blogTitle");
+var userName = document.getElementById("userName");
+var cityName = document.getElementById("cityName");
+var stateName = document.getElementById("stateName");
+var countryName = document.getElementById("countryName");
 
 var messageBox = document.getElementById("blogPosts");
 
 var inputArray = [weatherCondition, blogTitle, userName, cityName, stateName, countryName];
     console.log(inputArray);
 
-document.getElementById(weatherCondition.value);
+
 
 
 
@@ -35,24 +35,24 @@ function clearAndShow() {
 
     messageBox.innerHTML = "";
 
-    messageBox.innerHTML += "Weather Condition: " + weatherInput.join(", ") + "<br/>";
-    messageBox.innerHTML += "Blog Title: " + blogTitleInput.join(", ") + "<br/>";
-    messageBox.innerHTML += "User name: " + userNameInput.join(", ") + "<br/>";
-    messageBox.innerHTML += "City: " + cityInput.join(", ") + "<br/>";
-    messageBox.innerHTML += "State: " + stateInput.join(", ") + "<br/>";
-    messageBox.innerHTML += "Country: " + countryInput.join(", ");
+    messageBox.innerHTML += "Weather Condition: " + weatherInput.value("") + "<br/>";
+    messageBox.innerHTML += "Blog Title: " + blogTitleInput.value("") + "<br/>";
+    messageBox.innerHTML += "User name: " + userNameInput.value("") + "<br/>";
+    messageBox.innerHTML += "City: " + cityInput.value("") + "<br/>";
+    messageBox.innerHTML += "State: " + stateInput.value("") + "<br/>";
+    messageBox.innerHTML += "Country: " + countryInput.value("");
 
 };
 
-function insert() {
-    document.write("weatherCondition").value;
-    document.write("blogTitle").value;
-    document.write("userName").value;
-    document.write("city").value;
-    document.write("state").value;
-    document.write("country").value;
+// function insert() {
+//     document.write("weatherCondition").value;
+//     document.write("blogTitle").value;
+//     document.write("userName").value;
+//     document.write("city").value;
+//     document.write("state").value;
+//     document.write("country").value;
 
-    clearAndShow();
-};
+//     clearAndShow();
+// };
 
-console.log(insert());
+// console.log(insert());
