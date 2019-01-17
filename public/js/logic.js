@@ -1,7 +1,6 @@
-$(document).ready(function () {
-    $('.modal').modal();
-    $('.dropdown-trigger').dropdown();
-});
+$(document).ready(function(){
+    $('select').formSelect();
+  });
 
 $("input").keyup(function () {
     var txt = $("input").val();
@@ -46,13 +45,14 @@ function clearAndShow() {
 };
 
 function insert() {
-    document.write(weatherCondition.value);
-    document.write(blogTitle.value);
-    document.write(userName.value);
-    document.write(city.value);
-    document.write(state.value);
-    document.write(country.value);
+    document.write("weatherCondition").value;
+    document.write("blogTitle").value;
+    document.write("userName").value;
+    document.write("city").value;
+    document.write("state").value;
+    document.write("country").value;
 
     clearAndShow();
 };
 
+console.log(insert());

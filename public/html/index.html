@@ -59,16 +59,18 @@
         <div class="bloginput">
             <form class="blogForm">
                 <div>
-                    <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Weather Condition</a>
-                    <!-- Dropdown Structure -->
-                    <ul id='dropdown1' class='dropdown-content'>
-                        <li id="option"><i value="1" class="weatherCondition"></i>Flooding</li>
-                        <li id="option"><i value="2" class="weatherCondition"></i>Raining</li>
-                        <li id="option"><i value="3" class="weatherCondition"></i>Sunny</li>
-                        <li id="option"><i value="4" class="weatherCondition"></i>Snowing</li>
-                        <li id="option"><i value="5" class="weatherCondition"></i>Humid</li>
-                        <li id="option"><i value="6" class="weatherCondition"></i>Lightning</li>
-                    </ul>
+                    <div class='class="input-field col s12"'>
+                        <select>
+                            <option value="" disabled selected>Weather Condition</option>
+                            <option><i value="1" class="weatherCondition"></i>Flooding</li>
+                            <option><i value="2" class="weatherCondition"></i>Raining</li>
+                            <option><i value="3" class="weatherCondition"></i>Sunny</li>
+                            <option><i value="4" class="weatherCondition"></i>Snowing</li>
+                            <option><i value="5" class="weatherCondition"></i>Humid</li>
+                            <option><i value="6" class="weatherCondition"></i>Lightning</li>
+                        </select>
+                        <label>Weather Condition</label>
+                    </div>
                 </div>
 
                 <input type="text" id="blogTitle" placeholder="Blog Title">
@@ -143,10 +145,10 @@
     function getImage(.dropdown-content) {
 
         var image = " ";
-        if (dropdown-content === 'Lightening') {
+        if (dropdown - content === 'Lightening') {
             image = "/assets/Lightening.jpg"
         }
-        else if (dropdown-content === "Sunny") {
+        else if (dropdown - content === "Sunny") {
             image = "Site/assets/Sun.jpg"
         }
         return image;
