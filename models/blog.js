@@ -4,7 +4,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [1]
+                len: [255]
             }
         },
 
@@ -12,7 +12,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [1]
+                len: [255]
             }
         },
 
@@ -20,7 +20,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [1]
+                len: [255]
             }
         },
 
@@ -28,7 +28,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [1]
+                len: [255]
             }
         },
 
@@ -36,7 +36,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [1]
+                len: [255]
             }
         },
 
@@ -44,7 +44,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [1]
+                len: [255]
             }
         },
 
@@ -52,7 +52,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [1]
+                len: [255]
             }
         }
 
