@@ -10,27 +10,21 @@ $("input").keyup(function () {
     });
 });
 
-var inputArray = [weather_condition, blog_title, user_name, city_name, state_name, country_name];
-
-var weather_condition = document.getElementById("Weather Condition");
-var blog_title = document.getElementById("Blog Title");
-var user_name = document.getElementById("User name");
-var city_name = document.getElementById("City");
-var state_name = document.getElementById("State");
-var conutry_name = document.getElementById("Country");
+var weatherCondition = document.getElementsByClassName("weatherCondition");
+var blogTitle = document.getElementById("blogTitle");
+var userName = document.getElementById("userName");
+var cityName = document.getElementById("cityName");
+var stateName = document.getElementById("stateName");
+var countryName = document.getElementById("countryName");
 
 var messageBox = document.getElementById("blogPosts");
 
-function insert() {
-    weather_condition.push(weatherInput.value);
-    blog_title.push(blogTitleInput.value);
-    user_name.push(userNameInput.value);
-    city_name.push(cityInput.value);
-    state_name.push(stateInput.value);
-    country_name.push(countryInput.value);
+var inputArray = [weatherCondition, blogTitle, userName, cityName, stateName, countryName];
+    console.log(inputArray);
 
-    clearAndShow();
-};
+document.getElementById(weatherCondition.value);
+
+
 
 function clearAndShow() {
     weatherInput.value = "";
@@ -50,3 +44,15 @@ function clearAndShow() {
     messageBox.innerHTML += "Country: " + countryInput.join(", ");
 
 };
+
+function insert() {
+    document.write(weatherCondition.value);
+    document.write(blogTitle.value);
+    document.write(userName.value);
+    document.write(city.value);
+    document.write(state.value);
+    document.write(country.value);
+
+    clearAndShow();
+};
+
