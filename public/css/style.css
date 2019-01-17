@@ -112,9 +112,9 @@ body, html {
     margin-bottom: 40px;
     color:dimgrey; 
     font-size: 40px;
+    line-height: 1.0;
   }
   input[type=text], select {
-    /* width: 100%; */
     padding: 12px 20px;
     margin: 8px 0;
     height: 1rem !important;
