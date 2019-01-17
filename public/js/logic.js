@@ -17,16 +17,21 @@ function insert() {
     var countryName = $("#countryName").val();
     var weatherInput = $("#weatherInput").val();
     console.log(weatherCondition, blogTitle, userName, cityName, stateName, countryName, weatherInput, weatherCondition);
-    var obj={
-        weatherCondition:"",
-        blogTitle:"",
-        userName:"",
-        cityName:"",
-        stateName:"",
-        countryName:"",
-        weatherInput:"",
+    var data = {
+        weatherCondition: "",
+        blogTitle: "",
+        userName: "",
+        cityName: "",
+        stateName: "",
+        countryName: "",
+        weatherInput: "",
     };
+    $.ajax({
+        data: JSON.stringify(data)
+    });
 };
+
+
 
 var messageBox = document.getElementById("blogPosts");
 
