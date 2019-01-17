@@ -142,7 +142,14 @@ body, html {
   .input[type=submit]:hover {
     background-color: #45a049;
   }
-  
+
+  #blogPosts{
+    border-style: solid;
+    border-width: small;
+    border-color: dimgray;
+  }
+
+
 
  
 
