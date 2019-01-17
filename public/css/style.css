@@ -113,8 +113,8 @@ body, html {
     color:dimgrey; 
     font-size: 40px;
   }
-  input[type=text], select {
-    /* width: 100%; */
+  .input[type=text], select {
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     height: 1rem !important;
@@ -124,7 +124,7 @@ body, html {
     box-sizing: border-box;
   }
   
-  input[type=submit] {
+  .input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
     color: white;
@@ -135,11 +135,14 @@ body, html {
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
+  .input[type=submit]:hover {
     background-color: #45a049;
   }
-
-  #blogPosts {
-
-  }
   
+
+ 
+
+
+  
+
+ 
