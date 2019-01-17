@@ -38,6 +38,9 @@
                                 <div class="blogBtn">
                                     <a href="#blog-entry"><button class="blogBtn">Add A Blog</button></a>
                                 </div>
+                                <div class="blogBtn">
+                                        <a href="#blogDisplay"><button class="blogBtn">Go to Blog</button></a>
+                                </div>
                             </h4>
 
                         </div>
@@ -54,34 +57,35 @@
         </a>
 
         <div class="bloginput">
-            <form action="/action_page.php">
+            <form class="blogForm">
                 <div>
                     <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Weather Condition</a>
                     <!-- Dropdown Structure -->
                     <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="#!"><i class="material-icons"></i>Flooding</a></li>
-                        <li><a href="#!"><i class="material-icons"></i>Raining</a></li>
-                        <li><a href="#!"><i class="material-icons"></i>Sunny</a></li>
-                        <li><a href="#!"><i class="material-icons"></i>Snowing</a></li>
-                        <li><a href="#!"><i class="material-icons"></i>Humid</a></li>
-                        <li><a href="#!"><i class="material-icons"></i>Lightning</a></li>
+                        <li id="option"><i value="1" class="weatherCondition"></i>Flooding</li>
+                        <li id="option"><i value="2" class="weatherCondition"></i>Raining</li>
+                        <li id="option"><i value="3" class="weatherCondition"></i>Sunny</li>
+                        <li id="option"><i value="4"class="weatherCondition"></i>Snowing</li>
+                        <li id="option"><i value="5"class="weatherCondition"></i>Humid</li>
+                        <li id="option"><i value="6"class="weatherCondition"></i>Lightning</li>
                     </ul>
                 </div>
 
-                <input type="text" id="blog_title" name="blog_title" placeholder="Blog Title">
-                <input type="text" id="user_name" name="user_name" placeholder="User Name">
+                <input type="text" id="blogTitle"  placeholder="Blog Title">
 
-                <input type="text" id="city_name" name="city_name" placeholder="City Name">
+                <input type="text" id="userName"  placeholder="User Name">
 
-                <input type="text" id="state_name" name="state_name" placeholder="State Name">
+                <input type="text" id="cityName"  placeholder="City Name">
 
-                <input type="text" id="country_name" name="country__name" placeholder="Country Name">
+                <input type="text" id="stateName"  placeholder="State Name">
 
-                <input type="text" id="weather_input" name="weather_input" placeholder="Weather Blog">
+                <input type="text" id="countryName" placeholder="Country Name">
 
                 <br />
-                <button type="submit" class="btn btn-success submit btn-lg">Submit</button>
+                
+                <input type="button" class="btn btn-success submit btn-lg" value="Submit" onclick="insert()" />
 
+                <!-- anchor btn to blog catalog -->
             </form>
         </div>
 
@@ -92,7 +96,7 @@
             <div style="color:ivory;background-color:dimgray;text-align:center;padding:50px 80px;text-align: justify;">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <h2>Weather Blog Posts</h2>
+                        <a name="blogDisplay">Weather Blog Posts</a>
                         <hr>
                         <div id="blogPosts"></div>
                     </div>
