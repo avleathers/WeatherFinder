@@ -14,12 +14,12 @@ var inputArray = [weather_condition, blog_title, user_name, city_name, state_nam
 
 var weather_condition = document.getElementById("Weather Condition");
 var blog_title = document.getElementById("Blog Title");
-var user_name = document.getElementById(" User name");
+var user_name = document.getElementById("User name");
 var city_name = document.getElementById("City");
 var state_name = document.getElementById("State");
 var conutry_name = document.getElementById("Country");
 
-var messageBox = document.getElementById("display");
+var messageBox = document.getElementById("blogPosts");
 
 function insert() {
     weather_condition.push(weatherInput.value);
