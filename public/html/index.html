@@ -53,7 +53,7 @@
 
 
         <a name="blog-entry">
-            <h3 style="text-align:center; color: dimgray">Share Your Weather News</h3>
+            <h4 style="text-align:center; color: dimgray">Share Your Weather News</h4>
         </a>
 
         <div class="bloginput">
@@ -69,7 +69,7 @@
                             <option><i value="5" class="weatherCondition"></i>Humid</li>
                             <option><i value="6" class="weatherCondition"></i>Lightning</li>
                         </select>
-                        
+
                     </div>
                 </div>
 
@@ -98,10 +98,13 @@
             <div style="color:ivory;background-color:dimgray;text-align:center;padding:50px 80px;text-align: justify;">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <a name="blogDisplay">Weather Blog Posts</a>
+                        <a name="blogDisplay">
+                                <h4 style="text-align:center; color: ivory">Weather Blog Posts</h4>
+                            </a>
                         <hr>
                         <div id="blogPosts">
-
+                            <div class="col s3"></div>
+                            <div class="col s9"></div>
                         </div>
                     </div>
                 </div>
@@ -113,7 +116,7 @@
 
         <div style="position:relative;">
             <div style="color:ivory;background-color:#0f6182;text-align:center;padding:50px 80px;text-align: center;">
-                <h5>Thank you for using The Weather Forum!</h5>
+                <h4>Thank you for using The Weather Forum!</h4>
             </div>
         </div>
 
@@ -144,56 +147,5 @@
 <div class="blogImage" style="height: 250px; width: 250px">
 </div>
 
-<script>
-    // function getImage(".weatherCondition") {
-
-    var blogImage = "";
-
-    // if (".weatherCondition" === 1) {
-    //     blogImage = "/assets/Lightening.jpg"
-    // }
-
-    // else if (".weatherCondition" === 2) {
-    //     blogImage = "https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-    // }
-
-    // else if (".weatherCondition" === 3) {
-    //     blogImage = "Site/assets/Sun.jpg"
-    // }
-
-    // else if (".weatherCondition" === 4) {
-    //     blogImage = "Site/assets/Lightening.jpg"
-    // }
-
-    // else if (".weatherCondition" === 5) {
-    //     blogImage = "Site/assets/Lightening.jpg"
-    // }
-
-    // else if (".weatherCondition" === 6) {
-    //     blogImage = "Site/assets/Lightening.jpg"
-    // }
-
-    // return href = "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-
-    switch (new blogImage().getImg()) {
-        case 1:
-            blogImage = "https://images.pexels.com/photos/66867/norman-oklahoma-lightning-dangerous-66867.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
-            break;
-        case 2:
-            blogImage = "https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500";
-            break;
-        case 3:
-            blogImage = "WednesblogImage";
-            break;
-        case 4:
-            blogImage = "Thursday";
-            break;
-        case 5:
-            blogImage = "Friday";
-            break;
-        case 6:
-            blogImage = "Saturday";
-    }
-</script> -->
 
 </html>
