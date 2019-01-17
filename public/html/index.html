@@ -39,7 +39,7 @@
                                     <a href="#blog-entry"><button class="blogBtn">Add A Blog</button></a>
                                 </div>
                                 <div class="blogBtn">
-                                        <a href="#blogDisplay"><button class="blogBtn">Go to Blog</button></a>
+                                    <a href="#blogDisplay"><button class="blogBtn">Go to Blog</button></a>
                                 </div>
                             </h4>
 
@@ -65,24 +65,24 @@
                         <li id="option"><i value="1" class="weatherCondition"></i>Flooding</li>
                         <li id="option"><i value="2" class="weatherCondition"></i>Raining</li>
                         <li id="option"><i value="3" class="weatherCondition"></i>Sunny</li>
-                        <li id="option"><i value="4"class="weatherCondition"></i>Snowing</li>
-                        <li id="option"><i value="5"class="weatherCondition"></i>Humid</li>
-                        <li id="option"><i value="6"class="weatherCondition"></i>Lightning</li>
+                        <li id="option"><i value="4" class="weatherCondition"></i>Snowing</li>
+                        <li id="option"><i value="5" class="weatherCondition"></i>Humid</li>
+                        <li id="option"><i value="6" class="weatherCondition"></i>Lightning</li>
                     </ul>
                 </div>
 
-                <input type="text" id="blogTitle"  placeholder="Blog Title">
+                <input type="text" id="blogTitle" placeholder="Blog Title">
 
-                <input type="text" id="userName"  placeholder="User Name">
+                <input type="text" id="userName" placeholder="User Name">
 
-                <input type="text" id="cityName"  placeholder="City Name">
+                <input type="text" id="cityName" placeholder="City Name">
 
-                <input type="text" id="stateName"  placeholder="State Name">
+                <input type="text" id="stateName" placeholder="State Name">
 
                 <input type="text" id="countryName" placeholder="Country Name">
 
                 <br />
-                
+
                 <input type="button" class="btn btn-success submit btn-lg" value="Submit" onclick="insert()" />
 
                 <!-- anchor btn to blog catalog -->
@@ -137,17 +137,58 @@
     </div>
 </footer>
 
-<script>
-    function getImage(.dropdown-content) {
+<div class="blogImage" style="height: 250px; width: 250px">
+</div>
 
-        var image = " ";
-        if (dropdown-content === 'Lightening') {
-            image = "/assets/Lightening.jpg"
-        }
-        else if (dropdown-content === "Sunny") {
-            image = "Site/assets/Sun.jpg"
-        }
-        return image;
+<script>
+    // function getImage(".weatherCondition") {
+
+    var blogImage = "";
+
+    // if (".weatherCondition" === 1) {
+    //     blogImage = "/assets/Lightening.jpg"
+    // }
+
+    // else if (".weatherCondition" === 2) {
+    //     blogImage = "https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+    // }
+
+    // else if (".weatherCondition" === 3) {
+    //     blogImage = "Site/assets/Sun.jpg"
+    // }
+
+    // else if (".weatherCondition" === 4) {
+    //     blogImage = "Site/assets/Lightening.jpg"
+    // }
+
+    // else if (".weatherCondition" === 5) {
+    //     blogImage = "Site/assets/Lightening.jpg"
+    // }
+
+    // else if (".weatherCondition" === 6) {
+    //     blogImage = "Site/assets/Lightening.jpg"
+    // }
+
+    // return href = "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+
+    switch (new blogImage().getImg()) {
+        case 1:
+            blogImage = "https://images.pexels.com/photos/66867/norman-oklahoma-lightning-dangerous-66867.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500";
+            break;
+        case 2:
+            blogImage = "https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500";
+            break;
+        case 3:
+            blogImage = "WednesblogImage";
+            break;
+        case 4:
+            blogImage = "Thursday";
+            break;
+        case 5:
+            blogImage = "Friday";
+            break;
+        case 6:
+            blogImage = "Saturday";
     }
 </script>
 
