@@ -42,7 +42,11 @@ function clearAndShow() {
 
     messageBox.innerHTML = "";
 
-    messageBox.innerHTML += "Titles: " + titles.join(", ") + "<br/>";
-    messageBox.innerHTML += "Names: " + names.join(", ") + "<br/>";
-    messageBox.innerHTML += "Tickets: " + tickets.join(", ");
+    messageBox.innerHTML += "Weather Condition: " + weatherInput.join(", ") + "<br/>";
+    messageBox.innerHTML += "Blog Title: " + blogTitleInput.join(", ") + "<br/>";
+    messageBox.innerHTML += "User name: " + userNameInput.join(", ") + "<br/>";
+    messageBox.innerHTML += "City: " + cityInput.join(", ") + "<br/>";
+    messageBox.innerHTML += "State: " + stateInput.join(", ") + "<br/>";
+    messageBox.innerHTML += "Country: " + countryInput.join(", ");
+
 }
