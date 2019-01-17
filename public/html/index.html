@@ -1,12 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
+    <!-- Let browser know website is optimized for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>The Weather Forum</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--Import Google Icon Font-->
+
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../js/logic.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+
 </head>
+
 <body>
+
+    <div class="img">
+        <div style="color: ivory;background-color:#0f6182;text-align:center;padding:30px 80px;text-align: justify;">
+            <h3 style="text-align:center;">The Weather Forum</h3>
+            <p style="text-align: center; font-size: 20px; margin-left: 20px; margin-right: 20px">
+                <div class="headercontainer">
+                    <div class="jumbotron">
+                        <div class="headercontainer">
+                            <h4 class="header">
+                                <div class="blogBtn">
+                                    <button class="blogBtn">Blog</button>
+                                </div>
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="img-1">
+        </div>
+
     
+        <h3 style="text-align:center;">Share Your Weather News</h3>
+
+        <div class="bloginput">
+            <form class="blogForm">
+                <div>
+                    <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Weather Condition</a>
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!"><i class="material-icons"></i>Flooding</a></li>
+                        <li><a href="#!"><i class="material-icons"></i>Raining</a></li>
+                        <li><a href="#!"><i class="material-icons"></i>Sunny</a></li>
+                        <li><a href="#!"><i class="material-icons"></i>Snowing</a></li>
+                        <li><a href="#!"><i class="material-icons"></i>Humid</a></li>
+                        <li><a href="#!"><i class="material-icons"></i>Lightning</a></li>
+                    </ul>
+                </div>
+                
+                <input type="text" id="blog_title" name="blog_title" placeholder="Blog Title">
+                <input type="text" id="user_name" name="user_name" placeholder="Your Name">
+
+                <input type="text" id="city_name" name="city_name" placeholder="City Name">
+
+                <input type="text" id="state_name" name="state_name" placeholder="State Name">
+
+                <input type="text" id="country_name" name="country__name" placeholder="Country Name">
+
+                <input type="text" id="weather_input" name="weather_input" placeholder="Weather Blog">
+
+                <br />
+                <button type="submit" class="btn btn-success submit btn-lg">Submit</button>
+                
+                <!-- anchor btn to blog catalog -->
+            </form>
+        </div>
+
+        <div class="img-2">
+        </div>
+
+        <div style="position:relative;">
+            <div style="color:ivory;background-color:dimgray;text-align:center;padding:50px 80px;text-align: justify;">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <h2>Weather Blog Posts</h2>
+                      <hr>
+                      <div id="blogPosts"></div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="img-3">
+        </div>
+
+        <div style="position:relative;">
+            <div style="color:ivory;background-color:#0f6182;text-align:center;padding:50px 80px;text-align: center;">
+                <h5>Thank you for using The Weather Forum!</h5>
+            </div>
+        </div>
+
+        <div class="img-4">
+        </div>
+
+        <!--Materialize JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="../js/materialize.min.js">
+        </script>
+
 </body>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Powered by Materialize</h5>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2014 Copyright
+        </div>
+    </div>
+</footer>
+
 </html>
