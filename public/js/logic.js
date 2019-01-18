@@ -11,7 +11,7 @@ function insert() {
     var stateName = $("#stateName").val();
     var countryName = $("#countryName").val();
     var weatherInput = $("#weatherInput").val();
-    
+
     var data = {
         weatherCondition,
         blogTitle,
@@ -22,18 +22,21 @@ function insert() {
         weatherInput,
     };
     console.log(data)
-    $.Post(data)
-};
-$("#btn btn-success submit btn-lg" ).on( "click", clearForm());
-    
+    clearForm();
 
-
-
-function clearForm(){
-    $('blogForm').not('#weatherCondition, #blogTitle, #userName, #cityName, #stateName, #countryName, #weatherInput').val('');
 };
 
+function clearForm() {
+    $('#weatherCondition').val('')
+    $('#blogTitle').val('');
+    $('#userName').val('');
+    $('#cityName').val('');
+    $('#stateName').val('');
+    $('#countryName').val('');
+    $('#weatherInput').val('');
+};
 
 
 
-   
+
+
