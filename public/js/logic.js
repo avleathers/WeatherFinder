@@ -1,7 +1,10 @@
+//enables the dropdown menu
 
 $(document).ready(function () {
     $('select').formSelect();
 });
+
+//defines the user input values and creates an object to be passed to the server
 
 function insert() {
     var weatherCondition = $("#weatherCondition").val();
@@ -25,6 +28,8 @@ function insert() {
     clearForm();
 
 };
+
+//clears the form after the user has submitted the data and created the object
 
 function clearForm() {
     $('#weatherCondition').val('')
