@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
     $('select').formSelect();
 });
@@ -10,12 +12,12 @@ $("input").keyup(function () {
 });
 function insert() {
     var weatherCondition = $("#weatherCondition").val();
-    var blogTitle = $("#blogTitle").val().trim;
-    var userName = $("#userName").val().trim;
-    var cityName = $("#cityName").val().trim;
-    var stateName = $("#stateName").val().trim;
-    var countryName = $("#countryName").val().trim;
-    var weatherInput = $("#weatherInput").val().trim;
+    var blogTitle = $("#blogTitle").val();
+    var userName = $("#userName").val();
+    var cityName = $("#cityName").val();
+    var stateName = $("#stateName").val();
+    var countryName = $("#countryName").val();
+    var weatherInput = $("#weatherInput").val();
     console.log(weatherCondition, blogTitle, userName, cityName, stateName, countryName, weatherInput, weatherCondition);
     var data = {
         weatherCondition: "",
@@ -31,9 +33,12 @@ function insert() {
     });
 };
 
+// $('#blogForm')[0].reset();
 
 
-var messageBox = document.getElementById("blogPosts");
+
+// var messageBox = document.getElementById("blogPosts");
+
 
 
 
