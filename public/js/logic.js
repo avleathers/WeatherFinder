@@ -1,5 +1,4 @@
 
-
 $(document).ready(function () {
     $('select').formSelect();
 });
@@ -32,10 +31,14 @@ function insert() {
         data: JSON.stringify(data)
     });
 };
+$( "#btn btn-success submit btn-lg" ).on( "click", clearForm())
+    
 
-// $('#blogForm')[0].reset();
 
 
+function clearForm(){
+    $('input').not(':weatherCondition, :blogTitle, :userName, :cityName, :stateName, :countryName, :weatherInput').val('');
+};
 
 // var messageBox = document.getElementById("blogPosts");
 
