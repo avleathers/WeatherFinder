@@ -11,19 +11,18 @@ function insert() {
     var stateName = $("#stateName").val();
     var countryName = $("#countryName").val();
     var weatherInput = $("#weatherInput").val();
-    console.log(weatherCondition, blogTitle, userName, cityName, stateName, countryName, weatherInput, weatherCondition);
+    
     var data = {
-        weatherCondition: "",
-        blogTitle: "",
-        userName: "",
-        cityName: "",
-        stateName: "",
-        countryName: "",
-        weatherInput: "",
+        weatherCondition,
+        blogTitle,
+        userName,
+        cityName,
+        stateName,
+        countryName,
+        weatherInput,
     };
-    $.ajax({
-        data: JSON.stringify(data)
-    });
+    console.log(data)
+    $.Post(data)
 };
 $("#btn btn-success submit btn-lg" ).on( "click", clearForm());
     
