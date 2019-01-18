@@ -35,10 +35,6 @@ function insert() {
 
 var messageBox = document.getElementById("blogPosts");
 
-// var inputArray = [weatherCondition, blogTitle, userName, cityName, stateName, countryName];
-
-
-
 
 
 // function clearAndShow() {
