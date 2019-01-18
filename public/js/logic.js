@@ -1,35 +1,43 @@
-//enables the dropdown menu
-
 $(document).ready(function () {
     $('select').formSelect();
-});
+    $('#new-blog').on("click", insert);
 
-//defines the user input values and creates an object to be passed to the server
+/* global moment */
 
-function insert() {
-    var weatherCondition = $("#weatherCondition").val();
-    var blogTitle = $("#blogTitle").val();
-    var userName = $("#userName").val();
-    var cityName = $("#cityName").val();
-    var stateName = $("#stateName").val();
-    var countryName = $("#countryName").val();
-    var weatherInput = $("#weatherInput").val();
+function insert(event) {
+    event.preventDefault();
+    var weather_condition = $("#weatherCondition").val();
+    var blog_title = $("#blogTitle").val();
+    var user_name = $("#userName").val();
+    var city_name = $("#cityName").val();
+    var state_name = $("#stateName").val();
+    var country_name = $("#countryName").val();
+    var weather_input = $("#weatherInput").val();
 
     var data = {
-        weatherCondition,
-        blogTitle,
-        userName,
-        cityName,
-        stateName,
-        countryName,
-        weatherInput,
-    };
-    console.log(data)
+        weather_condition,
+        blog_title,
+        user_name,
+        city_name,
+        state_name,
+        country_name,
+        weather_input,
+    }
+    console.log(data);
+    $.post("/api/posts", data, getPosts);
     clearForm();
-
 };
 
-//clears the form after the user has submitted the data and created the object
+// $.then(function (event) {
+//     event.preventDefault();
+//     var blog = {
+//         text: blogInputs.val().trim(),
+//     };
+
+//     $.post("/api/posts", data, getPosts);
+//     blogInputs.val(data)
+
+// });
 
 function clearForm() {
     $('#weatherCondition').val('')
@@ -40,3 +48,58 @@ function clearForm() {
     $('#countryName').val('');
     $('#weatherInput').val('');
 };
+
+
+
+
+
+
+
+
+
+
+var blogInputs = $("input.blogInput");
+var blogContainer = $("#blogPosts");
+//$('select').formSelect();
+//$(document).on("submit", "blogPosts", postNewBlog);
+
+var blogs = [];
+getPosts();
+
+function createBlog(data) {
+    return $("<div>" + data.blog_title + "</div>");
+}
+
+function initializeColumn() {
+    blogContainer.empty();
+    var blogsToAdd = [];
+    for (var i = 0; i < blogs.length; i++) {
+        blogsToAdd.push(createBlog(blogs[i]));
+        
+    }
+    blogContainer.prepend(blogsToAdd);
+}
+
+function getPosts() {
+    $.get("/api/posts", function (data) {
+        blogs = data;
+        initializeColumn();
+        console.log(data);
+    });
+}
+
+getPosts();
+
+// function updatePost(post) {
+//     $.ajax({
+//       method: "PUT",
+//       url: "/api/posts",
+//       data: post
+//     }).then(getposts);
+//   }
+
+
+
+
+
+});
