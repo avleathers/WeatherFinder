@@ -60,14 +60,14 @@
             <form class="blogForm">
                 <div>
                     <div class='class="input-field col s12"'>
-                        <select id="weatherCondition">
+                        <select>
                             <option value="" disabled selected>Weather Condition</option>
-                            <option value="1"><li>Flooding</li></option>
-                            <option value="2"><li>Raining</li></option>
-                            <option value="3"><li>Sunny</li></option>
-                            <option value="4"><li>Snowing</li></option>
-                            <option value="5"><li>Humid</li></option>
-                            <option value="6"><li>Lightning</li></option>
+                            <option><i value="1" class="weatherCondition"></i>Flooding</li>
+                            <option><i value="2" class="weatherCondition"></i>Raining</li>
+                            <option><i value="3" class="weatherCondition"></i>Sunny</li>
+                            <option><i value="4" class="weatherCondition"></i>Snowing</li>
+                            <option><i value="5" class="weatherCondition"></i>Humid</li>
+                            <option><i value="6" class="weatherCondition"></i>Lightning</li>
                         </select>
 
                     </div>
@@ -87,9 +87,10 @@
 
                 <br />
 
-                <input type="button" class="btn btn-success submit btn-lg" value="Submit" onclick="insert()" />
+                <input type="button" class="btn btn-success submit btn-lg" value="Submit" onclick="insert()" 
+                />
 
-                
+                <!-- anchor btn to blog catalog -->
             </form>
         </div>
 
@@ -149,3 +150,4 @@
 </footer>
 
 </html>
+
