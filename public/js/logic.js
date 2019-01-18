@@ -68,6 +68,7 @@ getPosts();
 
 function createBlog(data) {
     return $("<div>" + data.blog_title + "</div>");
+    
 }
 
 function initializeColumn() {
