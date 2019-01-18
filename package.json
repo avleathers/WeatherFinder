@@ -1,7 +1,7 @@
 {
   "name": "weatherfinder",
   "version": "1.0.0",
-  "description": "weatherfinder",
+  "description": "Use weather API to find weather history by location using Node &amp; Express Web server mySQL/ORM",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,10 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/lsalazar2/WeatherFinder.git"
   },
-  "keywords": [
-    "project#2"
-  ],
-  "author": "Lori, Missy, Colin, T",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lsalazar2/WeatherFinder/issues"

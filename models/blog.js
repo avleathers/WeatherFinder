@@ -3,8 +3,8 @@ module.exports = function (sequelize, DataTypes) {
         user_name: {
             type: DataTypes.STRING,
             allowNull: false,
-            varlidate: {
-                len: [1]
+            validate: {
+                len: [255]
             }
         },
 
@@ -12,47 +12,47 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [1]
+                len: [255]
             }
         },
 
         city_name: {
             type: DataTypes.STRING,
             allowNull: false,
-            varlidate: {
-                len: [1]
+            validate: {
+                len: [255]
             }
         },
 
         state_name: {
             type: DataTypes.STRING,
             allowNull: false,
-            varlidate: {
-                len: [1]
+            validate: {
+                len: [255]
             }
         },
 
         country_name: {
             type: DataTypes.STRING,
             allowNull: false,
-            varlidate: {
-                len: [1]
+            validate: {
+                len: [255]
             }
         },
 
         weather_condition: {
             type: DataTypes.STRING,
             allowNull: false,
-            varlidate: {
-                len: [1]
+            validate: {
+                len: [255]
             }
         },
 
         weather_input: {
             type: DataTypes.STRING,
             allowNull: false,
-            varlidate: {
-                len: [1]
+            validate: {
+                len: [255]
             }
         }
 
