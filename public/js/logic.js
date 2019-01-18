@@ -37,7 +37,7 @@ $("#btn btn-success submit btn-lg" ).on( "click", clearForm());
 
 
 function clearForm(){
-    $('input').not(':weatherCondition, :blogTitle, :userName, :cityName, :stateName, :countryName, :weatherInput').val('');
+    $('input').not('#weatherCondition, #blogTitle, #userName, #cityName, #stateName, #countryName, #weatherInput').val('');
 };
 
 
