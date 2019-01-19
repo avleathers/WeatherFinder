@@ -67,8 +67,14 @@ var blogs = [];
 getPosts();
 
 function createBlog(data) {
-    return $("<div>" + data.blog_title + "</div>");
-    
+    return $("<div>" + data.weather_condition + "</div>" +
+    "<div>" + data.blog_title + "</div>"  + 
+    "<div>" + data.user_name + "</div>"+
+    "<div>" + data.city_name + "</div>"+
+    "<div>" + data.state_name + "</div>"+
+    "<div>" + data.country_name + "</div>"+
+    "<div>" + data.weather_input + "</div>");
+  
 }
 
 function initializeColumn() {
