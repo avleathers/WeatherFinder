@@ -1,0 +1,61 @@
+.blogBox {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    border-radius: 28px;
+    border: 4px solid lightgreen;
+    height: auto;
+    overflow: auto;
+    
+}
+
+
+#blog-image {
+    float: left;
+    height: 35%;
+    width: 35%;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    opacity: 0.96;
+    
+}
+
+#blog-title {
+    text-align: left;
+    font-size: 23px;
+    
+    
+}
+
+
+#blog-location {
+    font-size: 20px;
+    text-align: left;
+}
+
+#weather-input {
+    font-size: 20px;
+    text-align: left;
+}
+
+#weather-condition {
+    font-size: 20px;
+    text-align: left;
+}
+
+#user-name {
+
+    text-align: right;
+
+}
+
+#blog-delete {
+    float: right;
+    position: relative;
+    
+}

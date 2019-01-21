@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Weather Forum</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style2.css">
     <!--Import Google Icon Font-->
 
 
@@ -21,9 +22,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="/js/logic.js"></script>
-    <script type="text/javascript" src="/js/materialize.min.js"></script>
-
 </head>
 
 <body>
@@ -58,66 +56,66 @@
         </a>
 
         <div class="bloginput">
-                <div>
-                    <div class='class="input-field col s12"'>
-                        <select id="weatherCondition">
-                            <option value="" disabled selected>Weather Condition</option>
-                            <option value="Flooding">
-                                <li>Flooding</li>
-                            </option>
-                            <option value="Raining">
-                                <li>Raining</li>
-                            </option>
-                            <option value="Sunny">
-                                <li>Sunny</li>
-                            </option>
-                            <option value="Snowing">
-                                <li>Snowing</li>
-                            </option>
-                            <option value="Humid">
-                                <li>Humid</li>
-                            </option>
-                            <option value="Lightning">
-                                <li>Lightning</li>
-                            </option>
-                        </select>
+            <div>
+                <div class='class="input-field col s12"'>
+                    <select id="weatherCondition">
+                        <option value="" disabled selected>Weather Condition</option>
+                        <option value="Flooding">
+                            <li>Flooding</li>
+                        </option>
+                        <option value="Raining">
+                            <li>Raining</li>
+                        </option>
+                        <option value="Sunny">
+                            <li>Sunny</li>
+                        </option>
+                        <option value="Snowing">
+                            <li>Snowing</li>
+                        </option>
+                        <option value="Humid">
+                            <li>Humid</li>
+                        </option>
+                        <option value="Lightning">
+                            <li>Lightning</li>
+                        </option>
+                    </select>
 
-                    </div>
                 </div>
+            </div>
 
-                <input type="text" id="blogTitle" placeholder="Blog Title">
+            <input type="text" id="blogTitle" placeholder="Blog Title">
 
-                <input type="text" id="userName" placeholder="User Name">
+            <input type="text" id="userName" placeholder="User Name">
 
-                <input type="text" id="cityName" placeholder="City Name">
+            <input type="text" id="cityName" placeholder="City Name">
 
-                <input type="text" id="stateName" placeholder="State Name">
+            <input type="text" id="stateName" placeholder="State Name">
 
-                <input type="text" id="countryName" placeholder="Country Name">
+            <input type="text" id="countryName" placeholder="Country Name">
 
-                <input type="text" id="weatherInput" placeholder="Weather Input">
+            <input type="text" id="weatherInput" placeholder="Weather Input">
 
-                <br/>
+            <br />
 
-                <input type="submit" id="new-blog" class="btn btn-success submit btn-lg"/>
+            <input type="submit" id="new-blog" class="btn btn-success submit btn-lg" />
         </div>
 
         <div class="img-2">
         </div>
 
         <div style="position:relative;">
-            <div style="color:ivory;background-color:dimgray;text-align:center;padding:50px 80px;text-align: justify;">
-                <div class="row">
+            <div style="background-color:gray;text-align:center;padding:50px 80px;text-align: justify; ">
+                <div class="row" id="blog-row">
                     <div class="col-sm-8 col-sm-offset-2">
                         <a name="blogDisplay">
                             <h4 style="text-align:center; color: ivory">Weather Blog Posts</h4>
                         </a>
                         <hr>
-                        <div id="blogPosts">
-                            <div class="col s3"></div>
-                            <div class="col s9"></div>
-                            <div class="blogImage" style="height: 150px; width: 150px">
+                        <div class="blog-container">
+                            <div class="row-for-posts" >
+                                <!-- blog column here -->
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -136,7 +134,8 @@
         <div class="img-4">
         </div>
 
-       
+        <script src="/js/logic.js"></script>
+        <script type="text/javascript" src="/js/materialize.min.js"></script>
 
 </body>
 

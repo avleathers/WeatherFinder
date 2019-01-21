@@ -4,7 +4,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [1, 255]
+                len: [1, 250]
             }
         },
 
@@ -12,7 +12,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [1, 255]
+                len: [1, 250]
             }
         },
 
@@ -20,7 +20,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [1, 255]
+                len: [1, 250]
             }
         },
 
@@ -28,7 +28,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [1, 255]
+                len: [1, 250]
             }
         },
 
@@ -36,15 +36,15 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [1, 255]
+                len: [1, 250]
             }
         },
 
         weather_condition: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
             validate: {
-                len: [1, 255]
+                len: [1, 250]
             }
         },
 
@@ -52,12 +52,11 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [1, 255]
+                len: [1, 250]
             }
         }
 
     });
-
 
 
     Post.associate = function(bloggings) {
