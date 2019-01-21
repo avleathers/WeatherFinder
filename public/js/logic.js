@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 $(document).ready(function () {
     $('select').formSelect();
     $('#new-blog').on("click", insert);
@@ -51,15 +49,6 @@ function clearForm() {
     $('#weatherInput').val('');
 };
 
-
-
-
-
-
-
-
-
-
 var blogInputs = $("input.blogInput");
 var blogContainer = $("#blogPosts");
 //$('select').formSelect();
@@ -76,8 +65,6 @@ function createBlog(data) {
     "<div>" + data.state_name + "</div>"+
     "<div>" + data.country_name + "</div>"+
     "<div>" + data.weather_input + "</div>"+(br));
-    
-  
 }
 
 function initializeColumn() {
@@ -113,4 +100,3 @@ getPosts();
 
 
 });
->>>>>>> colinBranch
