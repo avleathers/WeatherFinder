@@ -1,9 +1,12 @@
 $(document).ready(function () {
+    // global
     $('select').formSelect();
     $('#new-blog').on("click", insert);
+    // $('#blog-delete').on("click", deleteBlog);
+    $(document).on("click", "button#blog-delete", deleteBlog);
 
-    /* global moment */
-
+    // function for getting inputs from HTML and inserting into database 
+    // by Colin
     function insert(event) {
         event.preventDefault();
         var weather_condition = $("#weatherCondition").val();
@@ -25,20 +28,13 @@ $(document).ready(function () {
         }
         console.log(data);
         $.post("/api/posts", data, getPosts);
+        blogInputs.val("");
         clearForm();
     };
 
-    $.then(function (event) {
-        event.preventDefault();
-        var blog = {
-            text: blogInputs.val().trim(),
-        };
 
-        $.post("/api/posts", data, getPosts);
-        blogInputs.val(data)
-
-    });
-
+    // function for empty the userinput blanks in HTML
+    // by Colin
     function clearForm() {
         $('#weatherCondition').val('')
         $('#blogTitle').val('');
@@ -50,40 +46,68 @@ $(document).ready(function () {
     };
 
 
-
-
-
-
-
-
-
-
+    // variables for post and blog sections
     var blogInputs = $("input.blogInput");
-    var blogContainer = $("#blogPosts");
-    $('select').formSelect();
-    $(document).on("submit", "blogPosts", postNewBlog);
-
+    var blogContainer = $(".row-for-posts");
     var blogs = [];
+    var toDelete = 0;
     getPosts();
 
-    function createBlog(data) {
-        return $("<div>" + data.weather_condition + "</div>" +
-            "<div>" + data.blog_title + "</div>" +
-            "<div>" + data.user_name + "</div>" +
-            "<div>" + data.city_name + "</div>" +
-            "<div>" + data.state_name + "</div>" +
-            "<div>" + data.country_name + "</div>" +
-            "<div>" + data.weather_input + "</div>" + (br));
 
-
+    function imageCall(data) {
+        var checkWeather = data.weather_condition;
+        imageSrc = [];
+        console.log(checkWeather);
+        if (checkWeather === "Flooding") {
+            imageSrc = "https://images.pexels.com/photos/1390183/pexels-photo-1390183.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        }
+        else if (checkWeather === "Raining") {
+            imageSrc = "https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        }
+        else if (checkWeather === "Sunny") {
+            imageSrc = "https://images.pexels.com/photos/39853/woman-girl-freedom-happy-39853.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        }
+        else if (checkWeather === "Snowing") {
+            imageSrc = "https://images.pexels.com/photos/313104/pexels-photo-313104.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        }
+        else if (checkWeather === "Humid") {
+            imageSrc = "https://images.pexels.com/photos/843428/pexels-photo-843428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        }
+        else if (checkWeather === "Lightning") {
+            imageSrc = "https://images.pexels.com/photos/66867/norman-oklahoma-lightning-dangerous-66867.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        }
     }
 
+    // function for showing blog data from database
+    function createBlog(data) {
+        imageCall(data);
+
+
+        var inputDisplay = $(
+            
+            "<div class='blogBox'>"  +
+            "<div id='image-row'><img id='blog-image' src='" + imageSrc + "'>" +"</div>" +
+            "<div id='user-name'>posted by <u>" + data.user_name + "</u></div>" + 
+            "<div id='blog-title'>" + "<p><b> Title: </b>" + data.blog_title + "</p>" + "</div>" + 
+            "<hr>" +
+            "<div id='blog-location'>" + "<p><b>Location: </b>" + data.city_name + ", " + data.state_name + ", " + data.country_name + "</p>" + "</div>" +
+            "<div id='weather-condition'>" + "<b>Weather Condition: </b>" + data.weather_condition + "</div>" +
+            "<hr>" +
+            "<div id='weather-input'>" + data.weather_input + "</div>" +
+            "<button class='delete btn btn-danger' id='blog-delete'>Delete Post</button>" +
+            "</div>" 
+        );
+    
+        return inputDisplay;
+    }
+
+
+    // function for adding posts one by one.
     function initializeColumn() {
         blogContainer.empty();
         var blogsToAdd = [];
         for (var i = 0; i < blogs.length; i++) {
             blogsToAdd.push(createBlog(blogs[i]));
-
         }
         blogContainer.prepend(blogsToAdd);
     }
@@ -91,23 +115,33 @@ $(document).ready(function () {
     function getPosts() {
         $.get("/api/posts", function (data) {
             blogs = data;
-            initializeColumn();
-            console.log(data);
+            if (!blogs || !blogs.length) {
+                emptyDisplay();
+            }
+            else {
+                initializeColumn();
+                console.log(data);
+            }
         });
     }
 
-    getPosts();
-
-    function updatePost(post) {
+    // find and delete post
+    function deleteBlog(id) {
         $.ajax({
-            method: "PUT",
-            url: "/api/posts",
-            data: post
-        }).then(getposts);
+            method: "DELETE",
+            url: "/api/posts/" + id 
+        }).then(getPosts);
     }
 
 
 
-
+    // display message when no blog
+    function emptyDisplay() {
+        blogContainer.empty();
+        var messageWhenEmpty = $("<h4>");
+        messageWhenEmpty.css({"text-align": "center", "color": "ivory"});
+        messageWhenEmpty.html("No posts yet.");
+        blogContainer.append(messageWhenEmpty);
+    }
 
 });

@@ -1,159 +1,153 @@
 body, html {
-    height: 100%;
-    scroll-behavior: smooth;
-  }
+  height: 100%;
+  scroll-behavior: smooth;
+}
 
-  .img { 
-    /* The image used */
-    background: url("https://earth.nullschool.net/#current/wind/surface/level/orthographic=-99.71,26.70,305/loc=-117.583,35.605");
+.img { 
+  /* The image used */
+  background: url("https://earth.nullschool.net/#current/wind/surface/level/orthographic=-99.71,26.70,305/loc=-117.583,35.605");
 
-    /* Full height */
-    height: 100%; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .img-1 { 
-    /* The image used */
-    background-image: url("https://images.pexels.com/photos/6566/sea-sky-clouds-weather.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  
-    /* Full height */
-    height: 100%; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  /* Full height */
+  height: 100%; 
 
-  .img-2 { 
-    /* The image used */
-    background-image: url("https://images.pexels.com/photos/763398/pexels-photo-763398.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-  
-    /* Full height */
-    height: 100%; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .img-3 { 
-    /* The image used */
-    background-image: url("https://images.pexels.com/photos/265959/pexels-photo-265959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  
-    /* Full height */
-    height: 100%; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .img-4 { 
-    /* The image used */
-    background-image: url("https://images.pexels.com/photos/417370/pexels-photo-417370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  
-    /* Full height */
-    height: 100%; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .dropdown-content{
-    width: max-content !important;
-    height:auto !important;
- }
+.img-1 { 
+  /* The image used */
+  background-image: url("https://images.pexels.com/photos/6566/sea-sky-clouds-weather.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 
-  .page-footer {
-    padding-top: 10px;
-    color: ivory;
-    background-color: #b9571b !important;
-  }   
- 
+  /* Full height */
+  height: 100%; 
 
- .jumbotron{
-    font-size: 40px;
-    display: flex;
-    align-items: center;    
-    justify-content: center;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-2 { 
+  /* The image used */
+  background-image: url("https://images.pexels.com/photos/763398/pexels-photo-763398.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-3 { 
+  /* The image used */
+  background-image: url("https://images.pexels.com/photos/265959/pexels-photo-265959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-4 { 
+  /* The image used */
+  background-image: url("https://images.pexels.com/photos/417370/pexels-photo-417370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dropdown-content{
+  width: max-content !important;
+  height:auto !important;
+}
+
+.page-footer {
+  padding-top: 10px;
+  color: ivory;
+  background-color: #b9571b !important;
+}   
+
+
+.jumbotron{
+  font-size: 40px;
+  display: flex;
+  align-items: center;    
+  justify-content: center;
 }
 
 .blogBtn{
-    text-align: center;
-    font-size: 20px;
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-    float: left;
-    padding: 10px;
-    border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  align-items: center;    
+  justify-content: center;
+  float: left;
+  padding: 10px;
+  border-radius: 5px;
 
 }
 .submitBtn{
-    text-align: center;
-    font-size: 30px;
-    display: flex;
-    align-items: center;    
-    justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  align-items: center;    
+  justify-content: center;
 
 }
-   
-  .bloginput {
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 40px;
-    color:dimgrey; 
-    font-size: 40px;
-    line-height: .5;
-  }
-  .input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    height: 1rem !important;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .input[type=submit]:hover {
-    background-color: #45a049;
-  }
-
-  #blogPosts{
-    border-style: solid;
-    border-width: small;
-    border-color: dimgray;
-  }
-
-
-
  
+.bloginput {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 40px;
+  color:dimgrey; 
+  font-size: 40px;
+  line-height: .5;
+}
 
+.input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  height: 1rem !important;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.blog-container{
   
-
- 
+  background: #d829a1;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 5px 10px rgba(0,0,0,.25);
+}
