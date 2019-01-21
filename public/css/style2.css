@@ -1,16 +1,19 @@
 .blogBox {
+    position: relative;
     float: left;
     width: 100%;
     padding: 10px;
     height: 400px;
     margin-top: 10px;
     margin-left: 10px;
-    background-color: rgb(241, 241, 241);
-    opacity: 1;
+    opacity: 0.95;
     border-radius: 28px;
     border: 4px solid rgba(134, 162, 173, 0.507);
     height: auto;
     overflow: auto;
+    background: #fcfcfc;
+    background: radial-gradient(circle at 20% 107%, #dddddd 0%, #b3b3b3 5%, #eaf7ff 40%, #d2e3e9 45%,#c0c6c9 60%,#c6cfd3 90%);
+    box-shadow: 0px 5px 10px rgba(0,0,0,.25);
     
 }
 
@@ -21,7 +24,9 @@
     width: 35%;
     margin-right: 10px;
     background-repeat: no-repeat;
-    opacity: 0.96;
+    opacity: 0.99;
+    overflow: auto;
+    border-radius: 30px;
     
 }
 
@@ -68,4 +73,23 @@
     box-shadow: 0px 5px 10px rgba(0,0,0,.25);
     color: rgb(87, 83, 83);
     font-family: sans-serif;
+    width: 100%;
 }
+
+#top-badge {
+    background: #12749b;
+    background: radial-gradient(circle at 20% 107%, #226079 0%, #2e84a7 5%, #20567a 40%, #20627c 45%,#3984a1 60%,#42acd6 90%);
+    box-shadow: 0px 5px 10px rgba(0,0,0,.25);
+}
+#mid-badge {
+    background: #135b77;
+    background: radial-gradient(circle at 15% 107%, #0f6182 0%, #1081ad 5%, #1a4353 40%, #24718f 45%,#275b85 60%,#42acd6 90%);
+    box-shadow: 0px 5px 10px rgba(0,0,0,.25);
+}
+
+#footer-badge {
+    background: #bb701b;
+    background: radial-gradient(circle at 20% 107%, #b46523 0%, #b45d23 5%, #9c5d15 40%, #a05b0c 45%,#a1571b 60%,#b46423 70%);
+    box-shadow: 0px 5px 10px rgba(0,0,0,.25);
+}
+

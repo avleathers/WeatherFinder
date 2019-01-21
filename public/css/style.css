@@ -118,6 +118,7 @@ body, html {
   font-size: 40px;
   line-height: .5;
 }
+
 .input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -145,7 +146,8 @@ body, html {
 }
 
 .blog-container{
-  border-style: solid;
-  border-width: small;
-  border-color: gray;
+  
+  background: #d829a1;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 5px 10px rgba(0,0,0,.25);
 }

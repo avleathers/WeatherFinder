@@ -2,8 +2,8 @@ $(document).ready(function () {
     // global
     $('select').formSelect();
     $('#new-blog').on("click", insert);
-    // $('.delete').on("click", findPosts);
-    // $(document).on("click", "button#blog-delete", deletePost);
+    // $('#blog-delete').on("click", deleteBlog);
+    $(document).on("click", "button#blog-delete", deleteBlog);
 
     // function for getting inputs from HTML and inserting into database 
     // by Colin
@@ -94,7 +94,7 @@ $(document).ready(function () {
             "<div id='weather-condition'>" + "<b>Weather Condition: </b>" + data.weather_condition + "</div>" +
             "<hr>" +
             "<div id='weather-input'>" + data.weather_input + "</div>" +
-            // "<button class='delete btn btn-danger' id='blog-delete'>Delete Post</button>",
+            "<button class='delete btn btn-danger' id='blog-delete'>Delete Post</button>" +
             "</div>" 
         );
     
@@ -126,14 +126,10 @@ $(document).ready(function () {
     }
 
     // find and delete post
-    function deletePost(event) {
-        event.stopPropagation();
-        $.get("/api/posts/" + id);
-        var id =data.id;
-        console.log(id);
-        $.delete({
+    function deleteBlog(id) {
+        $.ajax({
             method: "DELETE",
-            url: "/api/posts/" + id
+            url: "/api/posts/" + id 
         }).then(getPosts);
     }
 
@@ -147,64 +143,5 @@ $(document).ready(function () {
         messageWhenEmpty.html("No posts yet.");
         blogContainer.append(messageWhenEmpty);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // function randomImage() {
-    //     var search = $(this).attr("animal");
-    //     var apiURL = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=dc6zaTOxFJmzC&limit=1";
-
-    //     $.ajax({
-    //         url: apiURL,
-    //         method: "GET"
-    //     }).then(function (response) {
-    //         var results = response.data;
-    //         for (var i = 0; i < results.length; i++) {
-
-    //             var weatherDiv = $("<div>");
-
-    //             var weatherImage = $("<img>");
-
-    //             weatherImage.attr("src", results[i].images.fixed_height.url);
-
-
-    //             weatherDiv.append(weatherImage);
-
-    //             $("#blog-image").prepend(weatherDiv);
-
-    //         }
-    //     });
-    // };
-
 
 });
