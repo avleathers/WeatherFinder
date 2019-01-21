@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 ### Schema
+=======
+>>>>>>> colinBranch
 
 CREATE DATABASE weatherforum_db;
 USE weatherforum_db;
 
+<<<<<<< HEAD
 CREATE TABLE weather_inputs
 (
 	id int NOT NULL AUTO_INCREMENT,
@@ -17,3 +21,5 @@ CREATE TABLE weather_inputs
     date DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 	PRIMARY KEY (id)
 );
+=======
+>>>>>>> colinBranch
