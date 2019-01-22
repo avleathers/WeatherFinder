@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ~/Documents/WeatherFinder (TestBranch)
+=======
+Lori Salazar@LSlaptop MINGW64 ~/Documents/WeatherFinder (TestBranch)
+>>>>>>> origin/master
 1. $ npm test
 
 > weatherfinder@1.0.0 test C:\Users\Lori Salazar\Documents\WeatherFinder
@@ -6,6 +10,7 @@
 
 
 
+<<<<<<< HEAD
  Load a Page
    / (Home Page)
      √ should load without error (12288ms)
@@ -14,3 +19,13 @@
  1 passing (13s)
 
 2.
+=======
+  Load a Page
+    / (Home Page)
+      √ should load without error (12288ms)
+
+
+  1 passing (13s)
+
+2. 
+>>>>>>> origin/master
