@@ -146,8 +146,7 @@ body, html {
 }
 
 .blog-container{
-  
-  background: #d829a1;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background:#b9add8;
+  background: radial-gradient(circle at 30% 107%, );
   box-shadow: 0px 5px 10px rgba(0,0,0,.25);
 }

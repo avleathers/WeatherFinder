@@ -13,10 +13,8 @@
     overflow: auto;
     background: #fcfcfc;
     background: radial-gradient(circle at 20% 107%, #dddddd 0%, #b3b3b3 5%, #eaf7ff 40%, #d2e3e9 45%,#c0c6c9 60%,#c6cfd3 90%);
-    box-shadow: 0px 5px 10px rgba(0,0,0,.25);
-    
+    box-shadow: 0px 5px 10px rgba(0,0,0,.25);  
 }
-
 
 #blog-image {
     float: left;
@@ -32,11 +30,8 @@
 
 #blog-title {
     text-align: left;
-    font-size: 23px;
-    
-    
+    font-size: 23px;  
 }
-
 
 #blog-location {
     font-size: 20px;
@@ -56,22 +51,20 @@
 #user-name {
 
     text-align: right;
-
 }
 
 #blog-delete {
     float: right;
-    position: relative;
-    
+    position: relative;  
 }
 
 #blog-section-background {
     display: inline-block;
     color: #fff;
-    background: #d829a1;
-    background: radial-gradient(circle at 30% 107%, #97fdbe 0%, #4ccc67 5%, rgb(126, 126, 218) 40%, #fd5949 45%,#d624d6 60%,rgb(235, 167, 40) 90%);
+    background: #7c4dff;
+    background: radial-gradient(circle at 30% 107%, #6233e1 0%, #7c5cd3 5%, #534283 40%, #5236a0 45%,#594c7b 60%,#6e3ef4 90%);
     box-shadow: 0px 5px 10px rgba(0,0,0,.25);
-    color: rgb(87, 83, 83);
+    color: #7c4dff;
     font-family: sans-serif;
     width: 100%;
 }
