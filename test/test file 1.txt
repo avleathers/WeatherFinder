@@ -1,0 +1,16 @@
+~/Documents/WeatherFinder (TestBranch)
+1. $ npm test
+
+> weatherfinder@1.0.0 test C:\Users\Lori Salazar\Documents\WeatherFinder
+> mocha
+
+
+
+ Load a Page
+   / (Home Page)
+     √ should load without error (12288ms)
+
+
+ 1 passing (13s)
+
+2.
