@@ -4,7 +4,7 @@
   "description": "Use weather API to find weather history by location using Node &amp; Express Web server mySQL/ORM",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "node server.js"
   },
   "repository": {
@@ -22,5 +22,9 @@
     "mysql": "^2.16.0",
     "mysql2": "^1.6.4",
     "sequelize": "^4.42.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "nightmare": "^3.0.1"
   }
 }
