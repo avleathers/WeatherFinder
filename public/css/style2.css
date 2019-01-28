@@ -53,7 +53,7 @@
     text-align: right;
 }
 
-#blog-delete {
+.blog-delete {
     float: right;
     position: relative;  
 }

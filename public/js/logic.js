@@ -1,9 +1,9 @@
 $(document).ready(function () {
     // global
-    $('select').formSelect();
-    $('#new-blog').on("click", insert);
-    // $('#blog-delete').on("click", deleteBlog);
-    $(document).on("click", "button#blog-delete", deleteBlog);
+   $('select').formSelect();
+   $('#new-blog').on("click", insert);
+   // $('#blog-delete').on("click", deleteBlog);
+   $(document).on("click", ".blog-delete", deleteBlog);
 
     // function for getting inputs from HTML and inserting into database 
     // by Colin
@@ -78,28 +78,28 @@ $(document).ready(function () {
         }
     }
 
-    // function for showing blog data from database
-    function createBlog(data) {
-        imageCall(data);
+// function for showing blog data from database
+function createBlog(data) {
+    imageCall(data);
 
 
-        var inputDisplay = $(
-            
-            "<div class='blogBox'>"  +
-            "<div id='image-row'><img id='blog-image' src='" + imageSrc + "'>" +"</div>" +
-            "<div id='user-name'>posted by <u>" + data.user_name + "</u></div>" + 
-            "<div id='blog-title'>" + "<p><b> Title: </b>" + data.blog_title + "</p>" + "</div>" + 
-            "<hr>" +
-            "<div id='blog-location'>" + "<p><b>Location: </b>" + data.city_name + ", " + data.state_name + ", " + data.country_name + "</p>" + "</div>" +
-            "<div id='weather-condition'>" + "<b>Weather Condition: </b>" + data.weather_condition + "</div>" +
-            "<hr>" +
-            "<div id='weather-input'>" + data.weather_input + "</div>" +
-            "<button class='delete btn btn-danger' id='blog-delete'>Delete Post</button>" +
-            "</div>" 
-        );
-    
-        return inputDisplay;
-    }
+    var inputDisplay = $(
+
+        "<div class='blogBox'>"  +
+        "<div id='image-row'><img id='blog-image' src='" + imageSrc + "'>" +"</div>" +
+        "<div id='user-name'>posted by <u>" + data.user_name + "</u></div>" +
+        "<div id='blog-title'>" + "<p><b> Title: </b>" + data.blog_title + "</p>" + "</div>" +
+        "<hr>" +
+        "<div id='blog-location'>" + "<p><b>Location: </b>" + data.city_name + ", " + data.state_name + ", " + data.country_name + "</p>" + "</div>" +
+        "<div id='weather-condition'>" + "<b>Weather Condition: </b>" + data.weather_condition + "</div>" +
+        "<hr>" +
+        "<div id='weather-input'>" + data.weather_input + "</div>" +
+        "<button class='delete btn btn-danger blog-delete' data-id='" + data.id + "'>Delete Post</button>" +
+        "</div>"
+    );
+
+    return inputDisplay;
+}
 
 
     // function for adding posts one by one.
@@ -126,12 +126,14 @@ $(document).ready(function () {
     }
 
     // find and delete post
-    function deleteBlog(id) {
-        $.ajax({
-            method: "DELETE",
-            url: "/api/posts/" + id 
-        }).then(getPosts);
-    }
+   function deleteBlog() {
+    var ID = $(this).attr("data-id");
+    $.ajax({
+        method: "DELETE",
+        url: "/api/posts/" + ID
+    }).then(getPosts);
+    console.log("Blog has been deleted")
+}
 
 
 
